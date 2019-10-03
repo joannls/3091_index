@@ -1,0 +1,55 @@
+body{
+	background-color: black;
+}
+
+.textbox1{
+	width:705px;
+	position: absolute;
+	left:5%;
+	top:5%;
+
+}
+
+.names1{
+	color: #eaffbd;
+}
+
+.p1{
+	font-family: Bungee Hairline, sans-serif;
+	font-size: 24pt;
+	color:#ffffff;
+	width:200px;
+	height:700px;
+}
+
+.textbox2{
+	position: absolute;
+	left:65%;
+	top:5%;
+	width:300px;
+	height: 190px;
+	border: 2px solid #eaffbd;
+	padding: 30px;
+}
+
+.p2{
+	font-family: Bungee Hairline, sans-serif;
+	font-size: 17pt;
+	color:#eaffbd ;
+}
+
+.italics{
+	color: #eaffbd;
+}
+
+.textbox3{
+	width:320px;
+	position: absolute;
+	top: 43%;
+	left:67%;
+}
+.p3{
+	color: white;
+	font-family: Bungee Hairline, sans-serif;
+	font-size: 10pt;
+}
