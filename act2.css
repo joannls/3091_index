@@ -1,0 +1,114 @@
+#balloonBody{
+	width: 150px;
+	height:170px;
+	border-radius: 50%;
+	background-color: black;
+/*	left: 0px;
+	top: 0px;*/
+	position: absolute;
+}
+
+#balloonBodyCopy{
+	width: 150px;
+	height:170px;
+	border-radius: 50%;
+	background-color: black;
+/*	left: 0px;
+	top: 0px;*/
+	position: absolute;
+}
+
+#balloonTriangle{
+    width: 0;
+    height: 0;
+    bottom: -12px;
+    position: relative;
+    top: 170px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    left: 50%;
+    margin-left: -15px;
+    background-color: transparent;
+}
+
+#balloonTriangleCopy{
+    width: 0;
+    height: 0;
+    bottom: -12px;
+    position: relative;
+    top: 170px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    left: 50%;
+    margin-left: -15px;
+    background-color: transparent;
+}
+
+#balloonString{
+  width: 2px;
+  height: 46%;
+  background: #555555;
+/*  bottom: auto;
+  top: 60%;*/
+  margin-top: 170px;
+  position: relative;
+  left: 75px;
+}
+
+#balloonStringCopy{
+  width: 2px;
+  height: 46%;
+  background: #555555;
+/*  bottom: auto;
+  top: 60%;*/
+  margin-top: 170px;
+  position: relative;
+  left: 75px;
+}
+
+.main {
+	width: 190vh;
+	height: 120vh;
+	background-color: #d6ecfb;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+}
+
+#legend1{
+	position: absolute;
+	left: 40%;
+	top:20%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#legend2{
+	position: absolute;
+	left: 40%;
+	top:30%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.boldText{
+	font-weight: bold;
+	color: #e3719f;
+}
+
+.cloud1{
+	width: 600px;
+	height:auto;
+	position: absolute;
+	top: 20%;
+}
+
+.cloud2{
+	width: 800px;
+	height:auto;
+	position: absolute;
+	top: 30%;
+	left:32%;
+}
