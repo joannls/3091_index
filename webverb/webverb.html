@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Random Joanne </title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="act2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+	<script type="text/javascript">
+
+	var allBalloons;
+	var windowWidth;
+	var windowHeight;
+	var values = [-1, 1];
+
+	function moveDivs(event) {
+		var x = event.pageX;
+		var y = event.pageY;
+
+		document.getElementById("balloonBody").style.left=x+"px";
+		document.getElementById("balloonBody").style.top=y+"px";
+
+	}
+
+	function colourChange(){
+		const colours = ["#e4b4ff", "#ffff78", "#ffba9c", "#90f0af", "#9890f0", "#ea96d9", "#ee7575", "#f22727", "#5b921b", "#08baa4"];
+		random = Math.floor(Math.random() * 10);
+		let randomColour = colours[random];
+		const balloon = document.getElementById("balloonBody");
+		const balloontriangle = document.getElementById("balloonTriangle");
+		const balloonString = document.getElementById("balloonString");
+		balloon.style.background = randomColour;
+		balloonTriangle.style.borderBottom = "15px solid" + randomColour;
+		balloonString.style.background = randomColour;
+	}
+
+	document.documentElement.addEventListener("keyup", duplicate, false);
+
+	function duplicate(e){
+		if(e && e.keyCode == 13) {
+			const bodyDiv = document.querySelector("body");
+
+			const balloonBody = document.createElement("div");
+			balloonBody.setAttribute("id", "balloonBodyCopy");
+			const bodyLeft = document.querySelector("#balloonBody").style.left;
+			const bodyTop = document.querySelector("#balloonBody").style.top;
+			const bodyColour = document.querySelector("#balloonBody").style.background;
+			balloonBody.style.background = bodyColour;
+			balloonBody.style.top = bodyTop;
+			balloonBody.style.left = bodyLeft;
+
+			const balloonTriangle = document.createElement("div");
+			const triangleColour = document.querySelector("#balloonTriangle").style.borderBottom;
+			balloonTriangle.setAttribute("id", "balloonTriangleCopy");
+			balloonTriangle.style.borderBottom = triangleColour;
+
+			const balloonString = document.createElement("div");
+			const stringColour = document.querySelector("#balloonString").style.background;
+			balloonString.setAttribute("id", "balloonStringCopy");
+			balloonString.style.background = stringColour;
+
+			balloonBody.appendChild(balloonTriangle);
+			balloonBody.appendChild(balloonString);
+			bodyDiv.appendChild(balloonBody);
+
+			allBalloons.push(balloonBody);
+		}
+	}
+
+	function moveBalloons(){
+		for (var i=0; i<allBalloons.length; i++){
+			var randX = randNum(windowWidth);
+			var randY = randNum(windowHeight);
+			var balloonDirection = values[randNum(values.length)];
+
+			$(allBalloons[i]).css('top', randY + 'px');
+			$(allBalloons[i]).css('left', randX + 'px');
+			$(allBalloons[i]).css('transform', 'scaleX('+ balloonDirection+')');
+		}
+	}
+
+	function randNum(x){
+		var random = Math.random()*x;
+		random = Math.floor(random);
+		return random;
+	}
+
+	window.onload = function(){
+		windowWidth = $(window).width();
+		windowHeight = $(window).height();
+
+		allBalloons = $('.fish');
+		setInterval(moveBalloons, 500);
+	}
+
+	</script>
+</head>
+
+<body class="body" onmousemove="moveDivs(event)" onclick="colourChange()">
+
+	<div class="balloon">
+		<div id="balloonBody">
+			<div id="balloonTriangle"></div>
+			<div id="balloonString"></div>
+		</div>
+	</div>
+
+	<div class="main">
+		<div id="legend1">1. <span class="boldText">CLICK</span> CURSOR TO CHANGE BALLOON COLOR</div>
+		<div id="legend2">2. <span class="boldText">PRESS ENTER/RETURN</span> TO RELEASE</div>
+
+		<img class="cloud1" src="cloud.png">
+		<img class="cloud2" src="cloud.png">
+	</div>
+
+</body>
+
+</html>
