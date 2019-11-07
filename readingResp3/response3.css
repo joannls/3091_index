@@ -1,0 +1,89 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+#grad1{
+  height:230px;
+  width:180vh;
+  background-color: #70b3ff;
+  background-image: linear-gradient(#70b3ff,#c8d4ff);
+}
+
+#grad2{
+  height:700px;
+  width: 180vh;
+  background-color: #c2dbfd;
+  background-image: linear-gradient(#c2dbfd, #0040c7);
+}
+
+#text1{
+  width:500px;
+  height:auto;
+  position:absolute;
+  top:28%;
+  left:31%;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 17pt;
+}
+
+#text2{
+  position:absolute;
+  top:55%;
+  left:35%;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 17pt;
+}
+
+#text3{
+  position:absolute;
+  top:75%;
+  left:40%;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 17pt;
+}
+
+#text4{
+  position:absolute;
+  top:95%;
+  left:41%;
+  font-size: 10px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 17pt;
+}
+
+#ocean1{
+    height:700px;
+    width: 180vh;
+    background-color: #c2dbfd;
+    background-image: linear-gradient(#c2dbfd, #0040c7);
+    position: absolute;
+    top: 36%;
+}
+
+.bergLayer1{
+  width:500px;
+  height:auto;
+  position:absolute;
+  top:10%;
+  left:30%;
+  opacity: 30%;
+}
+
+.bergLayer2{
+  width:500px;
+  height:auto;
+  position:absolute;
+  top:10%;
+  left:30%;
+}
+
+
+}
