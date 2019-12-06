@@ -1,0 +1,34 @@
+body{
+	margin:0px;
+	padding:0px;
+	background-color: #E4EDF3;
+}
+
+p{
+ 	width: 800px;
+ 	position: absolute;
+ 	left: 22%;
+ 	top:20%;
+ 	font-family: karla, sans-serif;
+ 	line-height: 17pt;
+ 	color: #c96542;
+}
+
+h1{
+	font-family: Work Sans,sans-serif;
+	color: #f2562c;
+	left: 3%;
+	top: 19%;
+	position: absolute;
+}
+
+.numbers{
+	color: #f2562c;
+	font-size: 18pt;
+}
+
+.h1bold{
+	font-size: 60pt;
+	opacity: 40%;
+
+}
