@@ -1,0 +1,207 @@
+body{
+  padding: 0px;
+  margin:0px;
+  background-color: #E4EDF3;
+}
+
+h1{
+  font-family: 'Work Sans', sans-serif;
+  font-size: 70px;
+  left:15%;
+  top:-50px;
+  position: absolute;
+  color: #f2562c;
+  background-color: #ff9375;
+  padding:50px;
+  height:80px;
+  width:770px;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Karla', sans-serif;
+  color: #f2562c;
+  font-weight: lighter;
+  position: absolute;
+  font-size: 10pt;
+  left: 43%;
+  padding: 5px;
+  top:30%;
+  background-color: #E4EDF3;
+}
+
+a{
+  font-family: 'Karla', sans-serif;
+  color: #E4EDF3;
+  font-weight: lighter;
+  font-style: uppercase;
+  text-decoration: none;
+}
+
+#div1{
+  width:100px;
+  height:100vh;
+  background-color: #a8cde6;
+  position: absolute;
+  left:15%;
+  opacity: 30%;
+}
+#div2{
+  width:100px;
+  height:100vh;
+  background-color: #a8cde6;
+  position: absolute;
+  left:35%;
+  opacity: 30%;
+}
+#div3{
+  width:100px;
+  height:100vh;
+  background-color: #a8cde6;
+  position: absolute;
+  left:55%;
+  opacity: 30%;
+}
+#div4{
+  width:100px;
+  height:100vh;
+  background-color: #a8cde6;
+  position: absolute;
+  left:75%;
+  opacity: 30%;
+}
+#div5{
+  width:100vw;
+  height:100px;
+  background-color: #a8cde6;
+  position: absolute;
+  opacity: 30%;
+  top:50%;
+}
+
+
+#dropButton1{
+  width: 100px;
+  height:100px;
+  /* background-color: #ff8868; */
+  background-color: #fbc3b4;
+  position: absolute;
+  top:50%;
+  left: 15%;
+  font-family:'Karla',sans-serif;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.buttonText1{
+  position: relative;
+  top:40%;
+  color: white;
+}
+
+#dropButton2{
+  width:100px;
+  height:100px;
+  background-color: #ffb09b;
+  position: absolute;
+  top:50%;
+  left: 35%;
+  font-family:'Karla',sans-serif;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.buttonText2{
+  position: relative;
+  top:40%;
+  color: white;
+}
+
+#dropButton3{
+  width:100px;
+  height:100px;
+  background-color: #ff9c81;
+  position: absolute;
+  top:50%;
+  left: 55%;
+  font-family:'Karla',sans-serif;
+  font-size: 13pt;
+  text-align: center;
+}
+
+.buttonText3{
+  position: relative;
+  top:40%;
+  color: white;
+}
+
+#dropButton4{
+  width:100px;
+    height:100px;
+  background-color: #fd8a6b;
+  position: absolute;
+  top:50%;
+  left: 75%;
+  font-family:'Karla',sans-serif;
+  font-size: 10pt;
+  text-align: center;
+}
+
+#dropSlide2{
+  background-color: #ffb09b;
+  display: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 64%;
+  left: 35%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#dropSlide4{
+  background-color: #fd8a6b;
+  display: none;
+  width: 100px;
+  height: 210px;
+  position: absolute;
+  top: 64%;
+  left: 75%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#dropSlide1{
+  background-color: #fbc3b4;
+  display: none;
+  width: 100px;
+  height: 190px;
+  position: absolute;
+  top: 64%;
+  left: 15%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.buttonText4{
+  position: relative;
+  top:35%;
+  color: white;
+}
+
+#WP{
+  font-size: 14pt;
+}
+
+#TF{
+  font-size: 13pt;
+}
+
+#WV{
+  font-size: 14pt;
+}
+
+#resp1{
+  font-size: 16pt;
+}
+
